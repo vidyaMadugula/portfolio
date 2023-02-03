@@ -11,19 +11,42 @@ body{
 }
 .page-wrapper{
     display:flex;
-    justify-content:center ;
     justify-content: space-evenly;
     max-width: 1500px;
-    height: 100vh;
+    /* height: 100vh; */
     padding:50px;
     flex-wrap: wrap;
 }
 .side1{
-    width:30%;
+    display:flex;
+    flex-direction: column;
     background-color: #d7ccfb;
-    margin-bottom:50px;
-    padding-top:30px;
+    width:30%;
     border-radius: 10px;
+    margin: 1.5% 0 10% 0;
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 30px;
+}
+.wrapper2{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 0.5%;
+    margin-top: 15px;
+}
+.profile-pic,.h2-side1,.h1-side1{
+    margin: 2.5% auto;
+}
+.wrapper-1{
+    background-color: white;
+    width:fit-content;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding:5% 3% 5% 2%;
+    margin-bottom: 10%;
 }
 .side2{
     width:60%;
@@ -32,34 +55,21 @@ body{
     width:150px;
     height:200px;
     border-radius:5px;
-    margin-left:50px;
+    /* margin-left:50px;
     margin-top:15px;
-    margin-bottom:15px;
+    margin-bottom:15px; */
 }
-.wrapper{
-    margin-bottom:15px;
-    margin-left:50px;
+
+
+#frontend{
+    text-align: center;
 }
-.wrapper-1{
-    margin-top:25px;
-    display:inline-block;
-    background-color: white;
-    padding:20px;
-    border-radius: 10px;
-    font-size: 12px;
-    margin-left:70px;
-}
+
 h1{
     margin-bottom:5px;
     font-size:30px;
 }
-.h2-side1{
-    font-size:20px;
-    margin-left:50px;
-}
-h2{
-    font-size:20px; 
-}
+
 li{
     list-style: none;
 }
@@ -84,11 +94,8 @@ a{
     font-size:14px;
     color:#4125c0;
 }
-@media(max-width:900px){
-    .page-wrapper, .side1, .side2{
-        width:90%;
-    }
-}
+
+
 .fa-solid{
     color:black;
     vertical-align: middle;
@@ -98,9 +105,9 @@ a{
     margin-top:20px;
     margin-left:45px;
 }
-span{
+/* span{
     margin-left:15px;
-}
+} */
 .list{
     background-color: rgb(151, 149, 149);
     display:inline-block;
@@ -111,3 +118,28 @@ span{
     border-radius: 5px;
     margin:10px;
 }
+
+@media screen and (max-width:1000px){
+    /* #frontend{
+        color: pink;
+    } */
+    .wrapper-1{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:800px){
+    .page-wrapper{
+        /* display: flex; */
+        margin-top: 10px;
+        flex-direction: column;
+        
+    }
+    .side1, .side2{
+        width: 90%;
+    }
+    .wrapper-1{
+        font-size: 18px;
+    }
+
+}
+
